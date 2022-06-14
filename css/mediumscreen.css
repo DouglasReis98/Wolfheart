@@ -1,0 +1,79 @@
+#menu{
+    display: block;
+    position: absolute;    
+    width: 40%;
+    top: 70px;
+    left: 0;
+    background-color: gold;
+    text-align: left;
+    transition: .6s;
+    visibility: hidden;
+    overflow-x: hidden;
+    height: 0;
+}
+
+#menu li{
+    background: none;
+    
+}
+
+#menu a{
+    padding: 20px 20px;
+    background-color: gold;
+}
+
+#btn-mobile{
+    display: flex;
+    padding: .5rem;
+    background: none;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 18px 50px;
+}
+
+#nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-x: auto;
+}
+
+#hamburguer{
+    width: 20px;
+    border-top: 2px solid;
+    color: white;
+}
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    width: 20px;
+    height: 2px;;
+    display: block;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburguer{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.logotipo p{
+    font-size: .8em;
+}
+
+#janela-direita h2{
+    font-size: 2.5em;
+}
+
+#janela-esquerda h2{
+    font-size: 2.5em;
+}

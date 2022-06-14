@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link{
+    text-decoration: none;
+    color: initial;
+}
+
+a:visited{
+    color: initial;
+}
+
+body{
+    background-color: black;
+}
+
+#nav{
+    width: 100%;
+    height: 70px;
+    position: fixed; 
+    line-height: 4em;           
+    z-index: 1;    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:   rgba(0, 0, 0, 0.6);
+    /*background-color:   rgba(255, 0, 0, 0.6);*/
+}        
+
+#btn-mobile{
+display: none;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    width: 50rem; 
+    margin: 0 auto;    
+}
+
+#menu li {
+    margin: 3px auto;
+}
+
+#menu a{
+    padding: 20px 20px;
+    background-color: gold;
+}
+
+#nav #menu a:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+.fundo01, .fundo02, .fundo03, .fundo04{
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundo01{
+    background-image: url(../imagens/wolf-moon.jpg);
+}
+
+.logotipo{
+    width: 100%;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+    font-size: 3em;
+    opacity: 70%;
+}
+
+.logotipo img{
+    filter:invert(100%);
+    width: 80%;            
+}
+
+.logotipo p{
+    font-size: 1.2em;
+}
+
+.fundo02{
+    background-image: url(../imagens/wolf-night.jpg);
+
+}
+
+#janela-direita{
+    width: 50%;
+    height: auto;
+    background-color: gold;
+    top: 30%;
+    right: 0;
+    margin: 0;
+    position: absolute;
+    padding: 20px 40px;
+}
+#janela-direita h2{
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+}
+
+.fundo03{
+    background-image: url(../imagens/wolves.jpeg);
+
+}
+
+#janela-esquerda{
+    width: 50%;
+    height: auto;
+    background-color: gold;
+    top: 30%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    padding: 20px 40px;
+}
+#janela-esquerda h2{
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+}
+
+/*Animação-Cards*/
+[data-card]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-card="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-card="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-card].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/*-------------*/
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: darkgray;
+}
+/*----------------------------------ABOUT US---------------------------------*/
+
+#body2{
+    background-image: url(../imagens/wolf-moon.jpg);
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.principal{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.principal h2{
+    font-size: 3em;
+    opacity: 70%;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.principal h3{
+    font-size: 1.5em;
+    opacity: 70%;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.principal p{
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.clear{
+    clear: both;
+}
+
+/*----------VOCALIST----------*/
+#vocalist{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+
+#vocalist img{
+    float: left;
+    width: 35%;
+   padding-right: 20px;
+    
+}
+
+#vocalist h4{
+    color: white;
+    width: 80%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+
+}
+
+#vocalist p{
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*------------------------------*/
+
+/*----------GUITARIST 1----------*/
+#guitarist-1{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#guitarist-1 img{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding-right: 20px;
+}
+
+#guitarist-1 h4{
+    color: white;
+    width: 60%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+}
+
+#guitarist-1 p{
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*------------------------------*/
+
+/*----------GUITARIST 2----------*/
+#guitarist-2{
+     margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#guitarist-2 img{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding-right: 20px;
+}
+
+#guitarist-2 h4{
+    color: white;
+    width: 80%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+}
+
+#guitarist-2 p{
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*------------------------------*/
+
+/*----------BASSIST 2----------*/
+#bassist{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#bassist img{
+    float: left;
+    width: 35%;
+    float: left;
+    padding-right: 20px;
+}
+
+#bassist h4{
+    color: white;
+    width: 80%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+}
+
+#bassist p{
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*------------------------------*/
+
+/*----------BASSIST 2----------*/
+#drummer{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#drummer img{
+    float: left;
+    width: 35%;
+    padding-right: 20px;
+}
+
+#drummer h4{
+    color: white;
+    width: 80%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    margin: 0 auto;
+}
+
+#drummer p{
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*------------------------------*/
+
+/*-------------------------------------------------------------------*/
