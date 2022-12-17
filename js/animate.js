@@ -28,7 +28,7 @@ const target = document.querySelectorAll('[data-card]');
 const animationClass = 'animate';
 
 function animaScroll() {
-    const windowTop = window.pageYOffset - 100;
+    const windowTop = window.pageYOffset - 250;
     target.forEach(function(element) {
       if ((windowTop) > element.offsetTop) {
         element.classList.add(animationClass);
