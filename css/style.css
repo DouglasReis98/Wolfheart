@@ -65,6 +65,7 @@ display: none;
 
 .fundo01{
     background-image: url(../imagens/wolf-moon.jpg);
+    overflow-y: auto;
 }
 
 .logotipo{
