@@ -34,7 +34,6 @@ function animaScroll() {
         element.classList.add(animationClass);
       }
 
-      console.log(element.offsetTop);
     })
 }
 

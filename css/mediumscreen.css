@@ -1,11 +1,12 @@
 #menu{
     display: block;
     position: absolute;    
-    width: 40%;
+    width: 50%;
     top: 70px;
     left: 0;
     background-color: gold;
-    text-align: left;
+    text-align: center;
+    font-size: 14px;
     transition: .6s;
     visibility: hidden;
     overflow-x: hidden;
