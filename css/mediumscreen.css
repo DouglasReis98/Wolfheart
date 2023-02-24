@@ -1,7 +1,7 @@
 #menu{
     display: block;
     position: absolute;    
-    width: 50%;
+    max-width: 15em;
     top: 70px;
     left: 0;
     background-color: gold;
