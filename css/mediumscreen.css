@@ -9,7 +9,7 @@
     font-size: 14px;
     transition: .6s;
     visibility: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 0;
 }
 
